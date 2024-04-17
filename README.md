@@ -15,6 +15,8 @@
 
 # Github Explorer VUE + DDD
 
+[![CI - Vitest - unit tests](https://github.com/sunderhus/GithubExplorerVue/actions/workflows/test.yaml/badge.svg?branch=dev)](https://github.com/sunderhus/GithubExplorerVue/actions/workflows/test.yaml)
+
 Welcome to the DDD-powered VUE project! This Project is a real example of how to migrate really fast a project with React to VUE using DDD, SOLID and clean architecture.
 
 <p align="center">
