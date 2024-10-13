@@ -7,6 +7,8 @@ import { SaveRepositories } from '@/domain/use-cases/SaveRepositories'
 import { Repository } from '@/domain/models/Repository'
 import RepositoriesList from '@/presentation/components/RepositoryList.vue'
 import Footer from '@/presentation/components/Footer.vue'
+import PageHeader from '@/presentation/components/PageHeader.vue'
+import PageTitle from '@/presentation/components/PageTitle.vue'
 
 defineOptions({
   name: 'HomeView'
@@ -67,12 +69,9 @@ watchEffect(() => {
 </script>
 
 <template>
-  <img src="@/presentation/assets/logo.svg" alt="Github Explorer" />
-  <h1
-    class="text-3xl lg:text-4xl font-semibold text-gray-700 max-w-4xl leading-tight mt-20 lg:mt-28 md:word-wrap"
-  >
-    Explore repositories on GitHub.
-  </h1>
+  <PageHeader/>
+  
+  <PageTitle title="Explore repositories on GitHub."/>
 
   <form class="mt-10 lg:mt-16 max-w-xl w-full flex flex-col md:flex-row">
     <input
